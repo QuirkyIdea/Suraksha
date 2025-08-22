@@ -1,0 +1,341 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.suraksha"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <!-- Permissions -->
+12    <uses-permission android:name="android.permission.SEND_SMS" />
+12-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:6:5-67
+12-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.READ_CONTACTS" />
+13-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:7:5-72
+13-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:7:22-69
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:8:5-79
+14-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:9:5-81
+15-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:10:5-71
+16-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.VIBRATE" />
+17-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:11:5-66
+17-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:11:22-63
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:12:5-68
+18-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:12:22-65
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+19-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:13:5-77
+19-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:13:22-74
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:14:5-77
+20-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:14:22-74
+21    <uses-permission android:name="android.permission.CALL_PHONE" />
+21-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:15:5-69
+21-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:15:22-66
+22
+23    <!-- Voice Recognition Permissions -->
+24    <uses-permission android:name="android.permission.INTERNET" />
+24-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:18:5-67
+24-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:18:22-64
+25
+26    <!-- Queries for speech recognition -->
+27    <queries>
+27-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:21:5-27:15
+28        <intent>
+28-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:22:9-24:18
+29            <action android:name="android.speech.RecognitionService" />
+29-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:23:13-72
+29-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:23:21-69
+30        </intent>
+31
+32        <package android:name="com.whatsapp" />
+32-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:25:9-48
+32-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:25:18-45
+33        <package android:name="com.whatsapp.w4b" />
+33-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:26:9-52
+33-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:26:18-49
+34    </queries>
+35
+36    <!-- Features -->
+37    <uses-feature
+37-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:30:5-91
+38        android:name="android.hardware.location.gps"
+38-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:30:19-63
+39        android:required="false" />
+39-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:30:64-88
+40    <uses-feature
+40-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:31:5-99
+41        android:name="android.hardware.sensor.accelerometer"
+41-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:31:19-71
+42        android:required="false" />
+42-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:31:72-96
+43    <uses-feature
+43-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:32:5-34:36
+44        android:name="android.hardware.telephony"
+44-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:33:9-50
+45        android:required="false" />
+45-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:34:9-33
+46
+47    <permission
+47-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+48        android:name="com.example.suraksha.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.example.suraksha.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:36:5-110:19
+54        android:name="com.example.suraksha.SurakshaApplication"
+54-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:37:9-44
+55        android:allowBackup="true"
+55-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:38:9-35
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.13.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\34f5237675873af8d8f1817850a292a6\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+57        android:dataExtractionRules="@xml/data_extraction_rules"
+57-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:39:9-65
+58        android:debuggable="true"
+59        android:extractNativeLibs="false"
+60        android:fullBackupContent="@xml/backup_rules"
+60-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:40:9-54
+61        android:icon="@mipmap/ic_launcher"
+61-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:41:9-43
+62        android:label="@string/app_name"
+62-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:42:9-41
+63        android:roundIcon="@mipmap/ic_launcher_round"
+63-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:43:9-54
+64        android:supportsRtl="true"
+64-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:44:9-35
+65        android:testOnly="true"
+66        android:theme="@style/Theme.Suraksha" >
+66-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:45:9-46
+67        <activity
+67-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:47:9-57:20
+68            android:name="com.example.suraksha.MainActivity"
+68-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:48:13-41
+69            android:exported="true"
+69-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:49:13-36
+70            android:label="@string/app_name"
+70-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:50:13-45
+71            android:screenOrientation="portrait"
+71-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:52:13-49
+72            android:theme="@style/Theme.Suraksha" >
+72-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:51:13-50
+73            <intent-filter>
+73-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:53:13-56:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:54:17-69
+74-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:54:25-66
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:55:17-77
+76-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:55:27-74
+77            </intent-filter>
+78        </activity>
+79
+80        <activity-alias
+80-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:59:9-70:26
+81            android:name="com.example.suraksha.CalculatorAlias"
+81-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:60:13-44
+82            android:enabled="false"
+82-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:61:13-36
+83            android:exported="true"
+83-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:62:13-36
+84            android:icon="@drawable/ic_calculator_launcher"
+84-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:64:13-60
+85            android:label="Calculator"
+85-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:65:13-39
+86            android:targetActivity="com.example.suraksha.MainActivity" >
+86-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:63:13-51
+87            <intent-filter>
+87-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:53:13-56:29
+88                <action android:name="android.intent.action.MAIN" />
+88-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:54:17-69
+88-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:54:25-66
+89
+90                <category android:name="android.intent.category.LAUNCHER" />
+90-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:55:17-77
+90-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:55:27-74
+91            </intent-filter>
+92        </activity-alias>
+93
+94        <activity
+94-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:72:9-79:43
+95            android:name="com.example.suraksha.ui.screens.FakeCallActivity"
+95-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:73:13-56
+96            android:exported="false"
+96-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:74:13-37
+97            android:screenOrientation="portrait"
+97-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:76:13-49
+98            android:showOnLockScreen="true"
+98-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:77:13-44
+99            android:showWhenLocked="true"
+99-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:78:13-42
+100            android:theme="@style/Theme.Suraksha"
+100-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:75:13-50
+101            android:turnScreenOn="true" />
+101-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:79:13-40
+102        <activity
+102-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:81:9-85:52
+103            android:name="com.example.suraksha.ui.screens.OnboardingActivity"
+103-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:82:13-58
+104            android:exported="false"
+104-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:83:13-37
+105            android:screenOrientation="portrait"
+105-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:85:13-49
+106            android:theme="@style/Theme.Suraksha" />
+106-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:84:13-50
+107        <activity
+107-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:87:9-91:52
+108            android:name="com.example.suraksha.ui.screens.PermissionRequestActivity"
+108-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:88:13-65
+109            android:exported="false"
+109-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:89:13-37
+110            android:screenOrientation="portrait"
+110-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:91:13-49
+111            android:theme="@style/Theme.Suraksha" />
+111-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:90:13-50
+112
+113        <service
+113-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:93:9-98:58
+114            android:name="com.example.suraksha.services.SafetyService"
+114-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:94:13-51
+115            android:enabled="true"
+115-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:95:13-35
+116            android:exported="false"
+116-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:96:13-37
+117            android:foregroundServiceType="location|microphone" />
+117-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:97:13-64
+118
+119        <provider
+120            android:name="androidx.core.content.FileProvider"
+120-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:101:13-62
+121            android:authorities="com.example.suraksha.provider"
+121-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:102:13-60
+122            android:exported="false"
+122-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:103:13-37
+123            android:grantUriPermissions="true" >
+123-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:104:13-47
+124            <meta-data
+124-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:105:13-107:54
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:106:17-67
+126                android:resource="@xml/file_paths" />
+126-->G:\Android_applications\Suraksha\Suraksha\app\src\main\AndroidManifest.xml:107:17-51
+127        </provider>
+128
+129        <service
+129-->[androidx.room:room-runtime:2.6.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\643916f5463f0032ee89561313b967d7\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+130            android:name="androidx.room.MultiInstanceInvalidationService"
+130-->[androidx.room:room-runtime:2.6.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\643916f5463f0032ee89561313b967d7\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+131            android:directBootAware="true"
+131-->[androidx.room:room-runtime:2.6.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\643916f5463f0032ee89561313b967d7\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+132            android:exported="false" />
+132-->[androidx.room:room-runtime:2.6.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\643916f5463f0032ee89561313b967d7\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+133
+134        <activity
+134-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\86f6435f27fcb88c362a6bad289c46e6\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+135            android:name="androidx.compose.ui.tooling.PreviewActivity"
+135-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\86f6435f27fcb88c362a6bad289c46e6\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+136            android:exported="true" />
+136-->[androidx.compose.ui:ui-tooling-android:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\86f6435f27fcb88c362a6bad289c46e6\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+137        <activity
+137-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\c363a4d8a66261c8bfad5fa8b085591a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:23:9-25:39
+138            android:name="androidx.activity.ComponentActivity"
+138-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\c363a4d8a66261c8bfad5fa8b085591a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:24:13-63
+139            android:exported="true" />
+139-->[androidx.compose.ui:ui-test-manifest:1.7.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\c363a4d8a66261c8bfad5fa8b085591a\transformed\ui-test-manifest-1.7.0\AndroidManifest.xml:25:13-36
+140        <activity
+140-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\1a109428f05c27f2c3234f0f3b62f478\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+141            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+141-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\1a109428f05c27f2c3234f0f3b62f478\transformed\play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+142            android:exported="false"
+142-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\1a109428f05c27f2c3234f0f3b62f478\transformed\play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+143-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\1a109428f05c27f2c3234f0f3b62f478\transformed\play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+144
+145        <meta-data
+145-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\a0f929bbaf516dd2036a4ec4381989d0\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+146            android:name="com.google.android.gms.version"
+146-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\a0f929bbaf516dd2036a4ec4381989d0\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+147            android:value="@integer/google_play_services_version" />
+147-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\a0f929bbaf516dd2036a4ec4381989d0\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+148
+149        <provider
+149-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+150            android:name="androidx.startup.InitializationProvider"
+150-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+151            android:authorities="com.example.suraksha.androidx-startup"
+151-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+152            android:exported="false" >
+152-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+153            <meta-data
+153-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+154                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+154-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+155                android:value="androidx.startup" />
+155-->[androidx.emoji2:emoji2:1.3.0] C:\Users\nikhi\.gradle\caches\8.13\transforms\2217c5a51ea9eca5f3e527a14b81b58b\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+156            <meta-data
+156-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\nikhi\.gradle\caches\8.13\transforms\fffce40875629d187dce00028d58ea9d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:29:13-31:52
+157                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+157-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\nikhi\.gradle\caches\8.13\transforms\fffce40875629d187dce00028d58ea9d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:30:17-78
+158                android:value="androidx.startup" />
+158-->[androidx.lifecycle:lifecycle-process:2.8.3] C:\Users\nikhi\.gradle\caches\8.13\transforms\fffce40875629d187dce00028d58ea9d\transformed\lifecycle-process-2.8.3\AndroidManifest.xml:31:17-49
+159            <meta-data
+159-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+160                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+160-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+161                android:value="androidx.startup" />
+161-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+162        </provider>
+163
+164        <receiver
+164-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+165            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+165-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+166            android:directBootAware="false"
+166-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+167            android:enabled="true"
+167-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+168            android:exported="true"
+168-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+169            android:permission="android.permission.DUMP" >
+169-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+170            <intent-filter>
+170-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+171                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+171-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+172            </intent-filter>
+173            <intent-filter>
+173-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+174                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+174-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+175            </intent-filter>
+176            <intent-filter>
+176-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+177                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+177-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+178            </intent-filter>
+179            <intent-filter>
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+180                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\nikhi\.gradle\caches\8.13\transforms\48f6423de7f7895881f45a0d94bce8d6\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+181            </intent-filter>
+182        </receiver>
+183    </application>
+184
+185</manifest>
