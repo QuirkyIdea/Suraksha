@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="G:\Android_applications\Suraksha\app"
+    name=":app"
+    type="APP"
+    maven="Suraksha:app:unspecified"
+    agpVersion="8.12.1"
+    buildFolder="build"
+    bootClassPath="C:\Users\nikhi\AppData\Local\Android\Sdk\platforms\android-36\android.jar;C:\Users\nikhi\AppData\Local\Android\Sdk\build-tools\35.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-36"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>
